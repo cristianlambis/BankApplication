@@ -57,6 +57,7 @@ mvn -f account/pom.xml clean install -DskipTests
 # Compilar microservicio client
 mvn -f client/pom.xml clean install -DskipTests
 
+---
 
 ## Endpoints de la API
 
@@ -78,6 +79,8 @@ POST   /api/transactions
 GET    /api/transactions
 GET    /api/transactions/clients/{clientId}/report?dateTransactionStart=YYYY-MM-DD&dateTransactionEnd=YYYY-MM-DD
 
+---
+
 ## Colección Postman (Nota importante)
 
 Las instrucciones solicitaban enviar una colección Postman.  
@@ -93,7 +96,9 @@ Por tal motivo:
 ```text
 collection_bank_echoapi.json
 
-Estado Final
+---
+
+## Estado Final
 ✅ La solución está completa, totalmente funcional y lista para ser evaluada.
 
 

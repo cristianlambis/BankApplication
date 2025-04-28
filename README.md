@@ -57,48 +57,5 @@ mvn -f account/pom.xml clean install -DskipTests
 # Compilar microservicio client
 mvn -f client/pom.xml clean install -DskipTests
 
----
-
-## Endpoints de la API
-
-POST   /api/clients
-GET    /api/clients
-GET    /api/clients/{id}
-PUT    /api/clients/{id}
-PATCH  /api/clients/{id}
-DELETE /api/clients/{id}
-
-POST   /api/accounts
-GET    /api/accounts
-GET    /api/accounts/{id}
-PUT    /api/accounts/{id}
-PATCH  /api/accounts/{id}
-DELETE /api/accounts/{id}
-
-POST   /api/transactions
-GET    /api/transactions
-GET    /api/transactions/clients/{clientId}/report?dateTransactionStart=YYYY-MM-DD&dateTransactionEnd=YYYY-MM-DD
-
----
-
-## Colección Postman (Nota importante)
-
-Las instrucciones solicitaban enviar una colección Postman.  
-Sin embargo, **EchoAPI** (el cliente API integrado) **no permite exportar directamente**.  
-Por tal motivo:
-
-- Creé una cuenta externa en EchoAPI.
-- Importé manualmente toda la colección.
-- Procedí a exportarla y guardarla externamente.
-
-✅ La colección está incluida en el repositorio de GitHub en el archivo:
-
-```text
-collection_bank_echoapi.json
-
----
-
-## Estado Final
-✅ La solución está completa, totalmente funcional y lista para ser evaluada.
 
 
